@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Recopilacion de datos
+      var Fname = prompt("Ingrese nombre:");
+      var Lname = prompt("Ingrese apellido:");
+      var Age = prompt("Ingrese edad:", "YYYY-MM-DD");
+      //Calculo de edad
+      const getAge = (birthDate) => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e10);
+      //Presentacion
+      alert("Hola " + Fname + " " + Lname + ", tienes " + getAge(Age) + " años.");
+    </script>
+  </body>
+</html>
