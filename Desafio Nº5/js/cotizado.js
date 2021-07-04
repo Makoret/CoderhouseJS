@@ -5,12 +5,11 @@ setTimeout(function () {
   var reset = document.getElementById("reset");
   var valor_temp = 0;
 
-  refreshData();
+  refreshData(valor_temp);
 
   reset.addEventListener("click", function () {
     localStorage.clear();
-    alert(`Selecciones borradas!`);
-    refreshData();
+    refreshData(valor_temp);
   });
 
   var gridItem = document.getElementsByClassName("grid-item");
@@ -18,16 +17,15 @@ setTimeout(function () {
   for (let index = 0; index < gridItem.length; index++) {
     gridItem[index].addEventListener("click", function () {
       localStorage.setItem(`${index}`, `${array[index]}`);
-      refreshData();
+      refreshData(valor_temp);
     });
   }
 
-  function refreshData() {
+  function refreshData(value) {
     costo.innerHTML = 0;
     Object.keys(localStorage).forEach((key) => {
-      valor_temp += parseInt(localStorage.getItem(key));
-      costo.innerHTML = valor_temp;
+      value += parseInt(localStorage.getItem(key));
+      costo.innerHTML = value;
     });
-    valor_temp = 0;
   }
 }, 500);

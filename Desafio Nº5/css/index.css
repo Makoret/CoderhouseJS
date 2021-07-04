@@ -33,6 +33,20 @@ body .centered-title #monto {
           align-items: center;
 }
 
+body .centered-title #reset {
+  border-radius: 10px;
+  border-style: none;
+  background-color: lightgrey;
+}
+
+body .centered-title #reset:hover {
+  scale: 1.2;
+}
+
+body .centered-title #reset:active {
+  scale: 1.1;
+}
+
 body #grid-container {
   width: 90%;
   margin: 0px auto;
@@ -50,6 +64,10 @@ body #grid-container .grid-item:hover {
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
   background-color: white;
+}
+
+body #grid-container .grid-item:active {
+  scale: 0.95;
 }
 
 body #grid-container .grid-item {

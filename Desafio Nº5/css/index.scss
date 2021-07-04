@@ -13,6 +13,17 @@ body {
       width: fit-content;
       align-items: center;
     }
+    #reset {
+      border-radius: 10px;
+      border-style: none;
+      background-color: lightgrey;
+    }
+    #reset:hover {
+      scale: 1.2;
+    }
+    #reset:active {
+      scale: 1.1;
+    }
   }
   #grid-container {
     width: 90%;
@@ -23,6 +34,9 @@ body {
       transform: scale(1.1);
       transition: transform 0.2s;
       background-color: white;
+    }
+    .grid-item:active {
+      scale: 0.95;
     }
     .grid-item {
       padding: 10px;
