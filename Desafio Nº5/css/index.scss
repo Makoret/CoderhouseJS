@@ -1,0 +1,42 @@
+body {
+  font-family: calibri;
+  .centered-title {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    #monto {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+    }
+  }
+  #grid-container {
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    .grid-item:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s;
+      background-color: white;
+    }
+    .grid-item {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      .subtitulo {
+        height: 25px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+      }
+      b {
+        font-size: 11px;
+      }
+    }
+  }
+}
