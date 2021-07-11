@@ -1,0 +1,102 @@
+body {
+  font-family: calibri;
+}
+
+body .centered-title {
+  width: 90%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px auto;
+}
+
+body .centered-title #monto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .centered-title #reset {
+  border-radius: 10px;
+  border-style: none;
+  background-color: lightgrey;
+}
+
+body .centered-title #reset:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body .centered-title #reset:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body #grid-container {
+  width: 90%;
+  margin: 0px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+}
+
+body #grid-container .grid-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  background-color: white;
+}
+
+body #grid-container .grid-item:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body #grid-container .grid-item {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #grid-container .grid-item .subtitulo {
+  height: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #grid-container .grid-item b {
+  font-size: 11px;
+}
