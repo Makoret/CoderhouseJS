@@ -1,10 +1,7 @@
 body {
+    background: linear-gradient(to right, #858585, #ffffff);
     font-family: calibri;
     .centered-title {
-        background: #858585;
-        background: -webkit-linear-gradient(left, #858585, #ffffff);
-        background: -moz-linear-gradient(left, #858585, #ffffff);
-        background: linear-gradient(to right, #858585, #ffffff);
         padding-left: 5%;
         padding-right: 5%;
         height: 60px;
@@ -32,39 +29,48 @@ body {
             transform: scale(1.1);
         }
     }
-    #grid-container {
-        width: 65%;
-        float: left;
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        .grid-item:hover {
-            transform: scale(1.1);
-            transition: transform 0.2s;
-            background-color: white;
-        }
-        .grid-item:active {
-            transform: scale(1);
-        }
-        .grid-item {
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            .subtitulo {
-                height: 25px;
-                justify-content: space-between;
+    .main {
+        display: flex;
+        #grid-container {
+            width: 70vw;
+            height: 100%;
+            float: left;
+            padding-left: 15px;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            .grid-item:hover {
+                transform: scale(1.05);
+                transition: transform 0.2s;
+            }
+            .grid-item:active {
+                transform: scale(1.01);
+            }
+            .grid-item {
+                padding: 10px;
                 display: flex;
-                align-items: center;
-            }
-            b {
-                font-size: 11px;
+                flex-direction: column;
+                .subtitulo {
+                    height: 25px;
+                    justify-content: space-between;
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.9em;
+                }
+                b {
+                    font-size: 11px;
+                }
+                p {
+                    font-weight: lighter;
+                    font-size: 1.1em;
+                }
             }
         }
-    }
-    .image-container {
-        float: right;
-        background-color: #858585;
-        height: 700px;
-        width: 290px;
+        .image-container {
+            width: 30vw;
+            display: flex;
+            justify-content: space-around;
+            align-content: space-around;
+            flex-wrap: wrap;
+        }
     }
 }
