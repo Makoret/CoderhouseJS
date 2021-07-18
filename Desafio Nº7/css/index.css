@@ -1,7 +1,71 @@
 body {
+  height: 100vh;
+  width: 100vw;
   background: -webkit-gradient(linear, left top, right top, from(#858585), to(#ffffff));
   background: linear-gradient(to right, #858585, #ffffff);
   font-family: calibri;
+}
+
+body .main-container {
+  height: 25vh;
+  width: 35vw;
+  border-radius: 30px;
+  margin: 20vh auto;
+  background: #01528b;
+}
+
+body .main-container .entry {
+  height: -webkit-fill-available;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main-container .entry span {
+  font-family: calibri;
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: white;
+}
+
+body .main-container .entry .data #name {
+  font-family: calibri;
+  font-size: 1.2em;
+  font-weight: lighter;
+  border-style: none;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  text-align: center;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+body .main-container .entry .data .name-button {
+  font-family: calibri;
+  font-size: 1.2em;
+  font-weight: lighter;
+  border-radius: 5px;
+  border-style: none;
+  background-color: transparent;
+  color: white;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+body .main-container .entry .data .name-button:hover {
+  background-color: white;
+  color: #01528b;
 }
 
 body .centered-title {
@@ -22,9 +86,16 @@ body .centered-title {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0px auto;
+  background-color: #01528b;
+}
+
+body .centered-title h1 {
+  font-weight: lighter;
 }
 
 body .centered-title #monto {
+  font-weight: lighter;
+  font-size: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,10 +109,13 @@ body .centered-title #monto {
 
 body .centered-title #reset {
   border-radius: 10px;
-  height: 30px;
-  font-size: 1em;
+  font-size: 1.5em;
   border-style: none;
-  background-color: lightblue;
+  font-weight: lighter;
+  background-color: transparent;
+  font-family: calibri;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 body .centered-title #reset:hover {
@@ -107,16 +181,16 @@ body .main #grid-container .grid-item .subtitulo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 body .main #grid-container .grid-item b {
-  font-size: 11px;
+  font-size: 0.6em;
 }
 
 body .main #grid-container .grid-item p {
   font-weight: lighter;
-  font-size: 1.1em;
+  font-size: 0.83em;
 }
 
 body .main .image-container {
@@ -130,4 +204,8 @@ body .main .image-container {
       align-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+body .main .image-container img {
+  width: 100%;
 }

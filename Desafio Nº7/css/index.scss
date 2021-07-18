@@ -1,4 +1,53 @@
 body {
+    height: 100vh;
+    width: 100vw;
+    .main-container {
+        height: 25vh;
+        width: 35vw;
+        border-radius: 30px;
+        margin: 20vh auto;
+        background: #01528b;
+        .entry {
+            height: -webkit-fill-available;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            span {
+                font-family: calibri;
+                font-size: 1.5em;
+                font-weight: lighter;
+                color: white;
+            }
+            .data {
+                #name {
+                    font-family: calibri;
+                    font-size: 1.2em;
+                    font-weight: lighter;
+                    border-style: none;
+                    background-color: transparent;
+                    border-color: white;
+                    color: white;
+                    text-align: center;
+                    transition-duration: 1s;
+                }
+                .name-button {
+                    font-family: calibri;
+                    font-size: 1.2em;
+                    font-weight: lighter;
+                    border-radius: 5px;
+                    border-style: none;
+                    background-color: transparent;
+                    color: white;
+                    transition-duration: 0.3s;
+                }
+                .name-button:hover {
+                    background-color: white;
+                    color: #01528b;
+                }
+            }
+        }
+    }
     background: linear-gradient(to right, #858585, #ffffff);
     font-family: calibri;
     .centered-title {
@@ -10,17 +59,25 @@ body {
         align-items: center;
         justify-content: space-between;
         margin: 0px auto;
+        background-color: #01528b;
+        h1 {
+            font-weight: lighter;
+        }
         #monto {
+            font-weight: lighter;
+            font-size: 1.5em;
             display: flex;
             width: fit-content;
             align-items: center;
         }
         #reset {
             border-radius: 10px;
-            height: 30px;
-            font-size: 1em;
+            font-size: 1.5em;
             border-style: none;
-            background-color: lightblue;
+            font-weight: lighter;
+            background-color: transparent;
+            font-family: calibri;
+            transition-duration: 0.3s;
         }
         #reset:hover {
             transform: scale(1.2);
@@ -54,14 +111,14 @@ body {
                     justify-content: space-between;
                     display: flex;
                     align-items: center;
-                    font-size: 0.9em;
+                    font-size: 0.8em;
                 }
                 b {
-                    font-size: 11px;
+                    font-size: 0.6em;
                 }
                 p {
                     font-weight: lighter;
-                    font-size: 1.1em;
+                    font-size: 0.83em;
                 }
             }
         }
@@ -71,6 +128,9 @@ body {
             justify-content: space-around;
             align-content: space-around;
             flex-wrap: wrap;
+            img {
+                width: 100%;
+            }
         }
     }
 }
