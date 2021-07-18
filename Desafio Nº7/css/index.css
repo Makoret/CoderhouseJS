@@ -89,11 +89,13 @@ body .centered-title {
   background-color: #01528b;
 }
 
-body .centered-title h1 {
+body .centered-title h1 a {
   font-weight: lighter;
+  text-decoration: none;
+  color: unset;
 }
 
-body .centered-title #monto {
+body .centered-title #amount {
   font-weight: lighter;
   font-size: 1.5em;
   display: -webkit-box;
@@ -107,7 +109,7 @@ body .centered-title #monto {
           align-items: center;
 }
 
-body .centered-title #reset {
+body .centered-title .reset {
   border-radius: 10px;
   font-size: 1.5em;
   border-style: none;
@@ -118,14 +120,35 @@ body .centered-title #reset {
           transition-duration: 0.3s;
 }
 
-body .centered-title #reset:hover {
+body .centered-title .reset:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-body .centered-title #reset:active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+body .centered-title .reset:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .centered-title .save {
+  border-radius: 10px;
+  font-size: 1.5em;
+  border-style: none;
+  font-weight: lighter;
+  background-color: transparent;
+  font-family: calibri;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+body .centered-title .save:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body .centered-title .save:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 body .main {

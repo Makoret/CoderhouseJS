@@ -60,17 +60,19 @@ body {
         justify-content: space-between;
         margin: 0px auto;
         background-color: #01528b;
-        h1 {
+        h1 a {
             font-weight: lighter;
+            text-decoration: none;
+            color: unset;
         }
-        #monto {
+        #amount {
             font-weight: lighter;
             font-size: 1.5em;
             display: flex;
             width: fit-content;
             align-items: center;
         }
-        #reset {
+        .reset {
             border-radius: 10px;
             font-size: 1.5em;
             border-style: none;
@@ -79,11 +81,26 @@ body {
             font-family: calibri;
             transition-duration: 0.3s;
         }
-        #reset:hover {
+        .reset:hover {
             transform: scale(1.2);
         }
-        #reset:active {
-            transform: scale(1.1);
+        .reset:active {
+            transform: scale(1.05);
+        }
+        .save {
+            border-radius: 10px;
+            font-size: 1.5em;
+            border-style: none;
+            font-weight: lighter;
+            background-color: transparent;
+            font-family: calibri;
+            transition-duration: 0.3s;
+        }
+        .save:hover {
+            transform: scale(1.2);
+        }
+        .save:active {
+            transform: scale(1.05);
         }
     }
     .main {

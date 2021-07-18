@@ -18,7 +18,7 @@ setTimeout(function () {
 
     refreshData();
 
-    $("#reset").on("click", function () {
+    $(".reset").on("click", function () {
         localStorage.clear();
         refreshData();
     });
@@ -43,11 +43,11 @@ setTimeout(function () {
     );
 
     function refreshData() {
-        $("#costo").text(0);
+        $("#cost").text(0);
         let newVal = 0;
         Object.keys(localStorage).forEach((key) => {
             newVal += parseInt(localStorage.getItem(key));
         });
-        $("#costo").text(newVal);
+        $("#cost").text(newVal);
     }
 }, 500);
