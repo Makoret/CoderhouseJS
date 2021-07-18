@@ -1,18 +1,19 @@
 setTimeout(function () {
+    console.log($(".image-container").html());
     var array = [3000000, 800000, 800000, 25000, 48000, 130000, 90000, 10000, 90000, 80000, 4800, 14400];
     var images = [
-        "imagesseguro_img_1.jpg",
-        "imagesseguro_img_2.jpg",
-        "imagesseguro_img_3.jpg",
-        "imagesseguro_img_4.jpg",
-        "imagesseguro_img_5.jpg",
-        "imagesseguro_img_6.jpg",
-        "imagesseguro_img_7.jpg",
-        "imagesseguro_img_8.jpg",
-        "imagesseguro_img_9.jpg",
-        "imagesseguro_img_10.jpg",
-        "imagesseguro_img_11.jpg",
-        "imagesseguro_img_12.jpg",
+        `seguro_img_1.jpg`,
+        `seguro_img_2.jpg`,
+        `seguro_img_3.jpg`,
+        `seguro_img_4.jpg`,
+        `seguro_img_5.jpg`,
+        `seguro_img_6.jpg`,
+        `seguro_img_7.jpg`,
+        `seguro_img_8.jpg`,
+        `seguro_img_9.jpg`,
+        `seguro_img_10.jpg`,
+        `seguro_img_11.jpg`,
+        `seguro_img_12.jpg`,
     ];
 
     refreshData();
@@ -31,11 +32,13 @@ setTimeout(function () {
 
     $(".grid-item").hover(
         function imageChanger() {
-            console.log($(".grid-item").index(this));
-            console.log($(".image-container").text);
+            console.log($(".image-container").text());
+            $(".image-container").html(`
+            <img src="images\\${images[$(".grid-item").index(this)]}">`);
         },
         function e() {
-            $(".image-container").css("background-color", "#858585");
+            $(".image-container").html(`
+            <img src="images\\seguro_hogar.jpg">`);
         }
     );
 

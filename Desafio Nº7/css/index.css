@@ -8,7 +8,7 @@ body .centered-title {
   background: linear-gradient(to right, #858585, #ffffff);
   padding-left: 5%;
   padding-right: 5%;
-  height: 100px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
