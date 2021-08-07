@@ -27,6 +27,7 @@ setTimeout(function () {
         let dataToSend = $("#cost").text();
         console.log(`${user}`);
         console.log(`${dataToSend}`);
+        $("body").load("send.html");
     });
 
     $(".grid-item").click(function (e) {
