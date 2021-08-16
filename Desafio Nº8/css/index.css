@@ -31,10 +31,9 @@ body .main-container .entry {
           align-items: center;
 }
 
-body .main-container .entry span {
-  font-family: calibri;
-  font-size: 1.5em;
-  font-weight: lighter;
+body .main-container .entry .span-text {
+  text-align: center;
+  font: lighter 1.5em calibri;
   color: white;
 }
 

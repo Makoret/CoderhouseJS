@@ -1,5 +1,21 @@
 setTimeout(function () {
-    console.log($(".image-container").html());
+    (keys = Object.keys(localStorage)), (i = keys.length);
+    for (var i = 0; i < localStorage.length; i++) {
+        if (localStorage.key(i)) {
+            localStorage.key;
+            console.log($(".grid-item").index(i));
+        }
+    }
+
+    for (const key in localStorage) {
+        if (Object.hasOwnProperty.call(localStorage, key)) {
+            // const element = localStorage[key];
+            // $(".grid-item").index(key.toggleClass("grid-item-selected"));
+            console.log(typeof document.querySelectorAll(".grid-item")[key]);
+            document.querySelectorAll(".grid-item")[key].className += " grid-item-selected";
+        }
+    }
+
     var images = [
         `seguro_img_1.jpg`,
         `seguro_img_2.jpg`,
@@ -28,6 +44,13 @@ setTimeout(function () {
         console.log(`${user}`);
         console.log(`${dataToSend}`);
         $("body").load("send.html");
+        localStorage.clear();
+        setTimeout(function () {
+            $("span").append(`El costo total seria ${dataToSend}.\n Gracias por tu compra ${user}!`);
+            $(".aceptar").on("click", function (params) {
+                window.location.reload();
+            });
+        }, 500);
     });
 
     $(".grid-item").click(function (e) {
@@ -65,4 +88,4 @@ setTimeout(function () {
         });
         $("#cost").text(newVal);
     }
-}, 500);
+}, 400);
